@@ -1,11 +1,10 @@
 import './App.css';
-import pokemons from './data.jsx';
-import Pokecard from './components/Pokecard';
+import Pokedex from './components/Pokedex';
 
 function App() {
   return (
     <div className="App">
-      {pokemons.map((pokemon, idx) => <Pokecard key={idx} id={pokemon.id} name={pokemon.name} type={pokemon.type} exp={pokemon.base_experience} />)}
+      <Pokedex />
     </div>
   );
 }
