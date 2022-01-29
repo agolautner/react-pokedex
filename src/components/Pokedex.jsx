@@ -9,7 +9,9 @@ const Pokedex = () => {
   return (
     <div className='Pokedex'>
         <h1 className='Pokedex-heading'>Pokedex</h1>
-        {pokemons.map((pokemon, idx) => <Pokecard key={idx} id={pokemon.id} name={pokemon.name} type={pokemon.type} exp={pokemon.base_experience} />)}
+        <div className='Pokedex-cards-area'>
+          {pokemons.map((pokemon, idx) => <Pokecard key={idx} id={pokemon.id} name={pokemon.name} type={pokemon.type} exp={pokemon.base_experience} />)}
+        </div>
     </div>
   );
 };
